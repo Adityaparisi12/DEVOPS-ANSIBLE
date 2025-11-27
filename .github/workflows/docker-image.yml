@@ -29,8 +29,8 @@ jobs:
       - name: Build and Push Backend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./pfolioBackend
-          file: ./pfolioBackend/backend.Dockerfile
+          context: ./PfolioBackend
+          file: ./PfolioBackend/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}portfolio-fullstack-backend:latest
 
